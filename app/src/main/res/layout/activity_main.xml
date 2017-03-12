@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mohit.tokas.basicsone.MainActivity">
+
+
+    <!-- Print in TextView Button
+
+        first line specifies the unique ID of the button
+
+        second line specifies the width set to wrap_content which means the button will only take
+        width required to fit its content/text/label
+
+        third line specifies the width set to wrap_content which means the button will only take
+        height required to fit its content/text/label
+
+        fourth line specifies the text/label of the button which can be set as the string itself
+        or a reference to the string resource(currently used)
+
+        fifth line specifies the method to be called when the button is click, this method should
+        should be present in MainActivity.java
+
+        sixth line specifies that the button's top should be aligned to its parent i.e. relative
+        layout
+
+        seventh line specifies the space between the button and the element which the button has its
+        top aligned to
+
+        eighth line specifies that the button should be horizontally centered
+    -->
+    <Button
+        android:id="@+id/print_tview_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/print_textview_txt"
+        android:onClick="print_tview_btn_click"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- TextView for displaying message
+
+        first line specifies the unique ID of the button
+
+        second line specifies the width set to wrap_content which means the button will only take
+        width required to fit its content/text/label
+
+        third line specifies the width set to wrap_content which means the button will only take
+        height required to fit its content/text/label
+
+        fourth line specifies that the button's top should be aligned to the element with id
+        print_tview_btn
+
+        fifth line specifies the space between the button and the element which the button has its
+        top aligned to
+
+        sixth line specifies that the button should be horizontally centered
+
+        seventh line specifies the hint/placeholder of the textView which can be set as the string
+        itself or a reference to the string resource(currently used)
+    -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/print_tview_btn"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/textView_hint"/>
+
+
+    <!-- Print as Toast Button
+
+        first line specifies the unique ID of the button
+
+        second line specifies the width set to wrap_content which means the button will only take
+        width required to fit its content/text/label
+
+        third line specifies the width set to wrap_content which means the button will only take
+        height required to fit its content/text/label
+
+        fourth line specifies the text/label of the button which can be set as the string itself
+        or a reference to the string resource(currently used)
+
+        fifth line specifies the method to be called when the button is click, this method should
+        should be present in MainActivity.java
+
+        sixth line specifies that the button's top should be aligned to the element with id textView
+
+        seventh line specifies the space between the button and the element which the button has its
+        top aligned to
+
+        eighth line specifies that the button should be horizontally centered
+    -->
+    <Button
+        android:id="@+id/print_toast_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/print_toast_txt"
+        android:onClick="print_toast_btn_click"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

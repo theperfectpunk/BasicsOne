@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BasicsOne</string>
+    <!--string resource for print as toast button text-->
+    <string name="print_toast_txt">Print as Toast</string>
+    <!--string resource for print in TextView button text-->
+    <string name="print_textview_txt">Print in TextView</string>
+    <!--string resource for default text in TextView-->
+    <string name="textView_hint">Your message will appear here</string>
+    <!--string resource for the message, replace it with your own message :)-->
+    <string name="message">Hello, this app was created by theperfectpunk :)</string>
+</resources>
